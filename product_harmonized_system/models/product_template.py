@@ -27,6 +27,9 @@ from openerp import models, fields, api
 class ProductTemplate(models.Model):
     _inherit = "product.template"
 
+    intrastat_code_id = fields.Many2one(
+        comodel_name='hs.code',
+        string="Intrastat Code")
     hs_code_id = fields.Many2one(
         'hs.code', string='H.S. Code',
         company_dependent=True, ondelete='restrict',
