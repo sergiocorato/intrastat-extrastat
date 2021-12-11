@@ -33,7 +33,7 @@
     'data': [
         'data/country_data.xml',
         'views/product_template.xml',
-        'views/res_partner.xml',
+        # 'views/res_partner.xml',
         'views/res_country.xml',
         'views/account_tax.xml',
         'views/res_company.xml',
