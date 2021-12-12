@@ -19,6 +19,6 @@ def migrate(cr, version):
     for template in product_templates:
         template.intrastat_hs_code = template.intrastat_code_id.local_code
         _logger.info('Updated intrastat code to %s for product template %s' % (
-            template.intrastat_hs_code.local_code,
+            template.intrastat_hs_code,
             template.default_code,
         ))
