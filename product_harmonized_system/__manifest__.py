@@ -15,7 +15,6 @@
     'author': 'brain-tec AG, Akretion, Noviat, '
               'Odoo Community Association (OCA)',
     'depends': ['product'],
-    'conflicts': ['report_intrastat'],
     'data': [
         'security/product_hs_security.xml',
         'security/ir.model.access.csv',
