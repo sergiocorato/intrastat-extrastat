@@ -23,3 +23,6 @@ def migrate(cr, version):
             template.intrastat_hs_code,
             template.default_code,
         ))
+        template.intrastat_code_id = False
+        _logger.info('Set intrastat code for %s to False to prevent errors' %
+                     template.default_code)
